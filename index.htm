@@ -1,24 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="lo">
 <head>
-  <meta charset="UTF-8">
-  <title>LAOSHUG77</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TOTTI911 | ເວັບອັນດັບ 1 ຂອງລາວ</title>
+  <meta name="description" content="TOTTI911 ລະບົບ Auto ຝາກ-ຖອນ ໄວ ປອດໄພ 24 ຊົ່ວໂມງ ຮອງຮັບທຸກທະນາຄານ ມີທາງເຂົ້າສຳຮອງ.">
+  <meta name="theme-color" content="#0f172a" />
   <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      overflow: hidden;
-    }
-    iframe {
-      border: none;
-      width: 100%;
-      height: 100%;
-    }
+    body{margin:0;font-family:sans-serif;background:#0b0f1a;color:#e6edf7}
+    .wrap{max-width:960px;margin:0 auto;padding:20px}
+    .btn{display:flex;align-items:center;justify-content:space-between;gap:12px;
+      padding:14px 16px;margin:10px 0;border-radius:14px;background:#141c2d;
+      border:1px solid rgba(255,255,255,.06);cursor:pointer;transition:.2s}
+    .btn:hover{background:#1d2740}
+    .pill{font-size:12px;padding:3px 8px;border-radius:999px;
+      background:rgba(250,204,21,.12);border:1px solid rgba(250,204,21,.25);color:#fde68a}
+    .footer{margin-top:40px;color:#738096;font-size:13px;text-align:center}
   </style>
 </head>
 <body>
-  <iframe src="https://laoshug77-velvetra.store/la" allowfullscreen></iframe>
+  <div class="wrap">
+    <h1>TOTTI911 — ເວັບອັນດັບ 1 ຂອງລາວ</h1>
+    <p>ລະບົບ Auto ຝາກ-ຖອນ ໄວ · ປອດໄພ · ບໍ່ຕ້ອງ VPN</p>
+
+    <div>
+      <div class="btn" onclick="go('main')">
+        <span><strong>ທາງເຂົ້າຫຼັກ</strong> <span class="pill">TOTTI911</span></span>
+        ➜
+      </div>
+      <div class="btn" onclick="go('backup')">
+        <span><strong>ທາງເຂົ້າສຳຮອງ</strong></span>
+        ➜
+      </div>
+      <div class="btn" onclick="go('waMain')">
+        <span><strong>ຕິດຕໍ່ພະນັກງານ</strong> <span class="pill">WhatsApp ເບີຫຼັກ</span></span>
+        ➜
+      </div>
+      <div class="btn" onclick="go('waBackup')">
+        <span><strong>ຕິດຕໍ່ພະນັກງານ</strong> <span class="pill">WhatsApp ເບີສຳຮອງ</span></span>
+        ➜
+      </div>
+      <div class="btn" onclick="go('fb')">
+        <span><strong>ເພຈເຟສບຸກ</strong> <span class="pill">Facebook</span></span>
+        ➜
+      </div>
+    </div>
+
+    <p class="footer">© <span id="y"></span> TOTTI911 · ບໍລິການ 24/7</p>
+  </div>
+
+  <script>
+    // 🔒 เก็บลิงก์จริงไว้ใน JS เท่านั้น
+    const CONFIG = {
+      main: "https://totti911-Graniva.store/",
+      backup: "https://totti911-Shardx.store.site/",
+      waMain: "https://wa.me/XXXXXXXXXXX?text=สมัคร TOTTI911",
+      waBackup: "https://wa.me/YYYYYYYYYYY?text=สมัคร TOTTI911",
+      fb: "https://www.facebook.com/profile.php?id=61577060775782"
+    };
+
+    // 📌 ฟังก์ชันเปิดลิงก์
+    function go(type){
+      if(CONFIG[type]){
+        window.open(CONFIG[type], "_blank", "noopener,noreferrer");
+      }else{
+        alert("ບໍ່ພົບລິ້ງ!");
+      }
+    }
+
+    // ปีปัจจุบัน
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
